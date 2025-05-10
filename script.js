@@ -1,17 +1,32 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const pollForm = document.getElementById("poll-form");
+console.log("scripts.js loaded!");
 
-  pollForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const pollQuestion = document.getElementById("poll-question").value;
+// Example: Add an event listener to the button
+const createPollButton = document.getElementById('create-poll-btn');
 
-    if (pollQuestion.trim() === "") {
-      alert("Please enter a poll question!");
-      return;
-    }
+if (createPollButton) {
+    createPollButton.addEventListener('click', function() {
+        alert("Create Poll button clicked! (This is just a placeholder for now)");
+        
+}
 
-    // Simulate poll creation
-    alert(`Poll Created: "${pollQuestion}"!`);
-    document.getElementById("poll-question").value = ""; // Clear input field
-  });
-});
+// This is also where you would initialize Firebase later:
+/*
+import { initializeApp } from 'firebase/app';
+// Add Firebase products that you want to use
+// import { getAuth } from 'firebase/auth';
+// import { getFirestore } from 'firebase/firestore';
+
+// TODO: Replace the following with your app's Firebase configuration
+const firebaseConfig = {
+  // ... your Firebase project config details here
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+// Get references to Firebase services
+// const auth = getAuth(app);
+// const db = getFirestore(app);
+
+// Now you can use 'auth', 'db', etc. in your script
+*/
