@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PollAnon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to PollAnon</h1>
+        <p>Create anonymous polls and share them with friends!</p>
+        <button id="login-btn" onclick="login()">Login with Google</button>
+    </header>
+    <main>
+        <section id="dashboard" style="display: none;">
+            <h2>Dashboard</h2>
+            <p>Create your poll below:</p>
+            <textarea id="poll-text" placeholder="Type your poll question..."></textarea>
+            <button id="create-poll-btn">Create Poll</button>
+            <div id="poll-preview"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 PollAnon</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
