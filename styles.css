@@ -1,47 +1,159 @@
+/* Reset and fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 10px;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-header h1 {
-    margin: 0;
+/* Header */
+.header {
+  background: #4CAF50;
+  color: #fff;
+  padding: 20px 0;
 }
 
-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-    font-size: 1rem;
+.header .logo {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
-button:hover {
-    background-color: #45a049;
+.header .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-textarea {
-    width: 80%;
-    height: 100px;
-    padding: 10px;
-    margin: 20px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.header .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-footer {
-    margin-top: 30px;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+.header .nav-links a:hover {
+  text-decoration: underline;
 }
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: #e0f7fa;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background: #00796b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.hero button:hover {
+  background: #004d40;
+}
+
+/* Features Section */
+.features {
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  min-width: 250px;
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  font-size: 1rem;
+}
+
+/* Create Poll Section */
+.create-poll {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.create-poll h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+#create-poll input {
+  padding: 10px;
+  margin-right: 10px;
+  width: 70%;
+  max-width: 400px;
+}
+
+#create-poll button {
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#create-poll button:hover {
+  background: #388E3C;
+}
+
+/* Footer */
+.footer {
+  background: #4CAF50;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+    }
