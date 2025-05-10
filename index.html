@@ -1,29 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PollAnon</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PollAnon - Create Polls Anonymously</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Welcome to PollAnon</h1>
-        <p>Create anonymous polls and share them with friends!</p>
-        <button id="login-btn" onclick="login()">Login with Google</button>
-    </header>
-    <main>
-        <section id="dashboard" style="display: none;">
-            <h2>Dashboard</h2>
-            <p>Create your poll below:</p>
-            <textarea id="poll-text" placeholder="Type your poll question..."></textarea>
-            <button id="create-poll-btn">Create Poll</button>
-            <div id="poll-preview"></div>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 PollAnon</p>
-    </footer>
-    <script src="script.js"></script>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">PollAnon</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#create-poll">Create a Poll</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Create Polls. Share Anonymously. React Freely.</h2>
+        <p>PollAnon lets you create polls, share them on Instagram stories, and receive anonymous feedback from friends.</p>
+        <button id="get-started-btn">Get Started</button>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <h2>Features</h2>
+        <div class="feature-list">
+          <div class="feature-item">
+            <h3>Easy Poll Creation</h3>
+            <p>Create polls with a few clicks and share them seamlessly.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Anonymous Feedback</h3>
+            <p>Receive honest reactions and comments from your friends.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Unlock Insights</h3>
+            <p>Pay a small fee to reveal who reacted to your posts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="create-poll" class="create-poll">
+      <div class="container">
+        <h2>Create Your Poll</h2>
+        <form id="poll-form">
+          <input type="text" placeholder="Enter your poll question" id="poll-question" required>
+          <button type="submit">Create Poll</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container">
+      <p>&copy; 2025 PollAnon. All rights reserved.</p>
+      <a href="mailto:support@pollanon.com">Contact Us</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-</html>
+    </html>
