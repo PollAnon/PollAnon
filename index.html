@@ -1,71 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PollAnon</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter :wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PollAnon - Anonymous Polling</title>
+    <!-- Link to our stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="navbar">
-    <div class="container">
-      <h1 class="logo">PollAnon</h1>
-      <nav>
-        <a href="#features">Features</a>
-        <a href="#how-it-works">How It Works</a>
-        <a href="#pricing">Pricing</a>
-      </nav>
-    </div>
-  </header>
 
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <h2>Create Polls. Share Anonymously. React Freely.</h2>
-        <p>Post polls to Instagram Stories and get honest feedback from friends. Unlock identities for a small fee!</p>
-        <button class="btn-google-login" onclick="loginWithGoogle()">Login with Google</button>
-      </div>
-      <div class="story-preview">
-        <div class="story-frame">
-          <div class="story-poll">
-            <p>"Should we go to Bali or Maldives?"</p>
-            <div class="options">
-              <div>Bali 🌴</div>
-              <div>Maldives 🏝️</div>
-            </div>
-            <span>Anonymous Responses</span>
-          </div>
+    <header>
+        <div class="container">
+            <h1>PollAnon</h1>
+            <!-- You could add a logo or navigation icons here later -->
         </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <section id="features" class="features">
-    <div class="container">
-      <h3>Why Use PollAnon?</h3>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <h4>🔒 Anonymous Feedback</h4>
-          <p>Receive unfiltered opinions from friends without judgment.</p>
-        </div>
-        <div class="feature-card">
-          <h4>📱 Instagram Integration</h4>
-          <p>Share polls directly to your Instagram Stories in one click.</p>
-        </div>
-        <div class="feature-card">
-          <h4>💡 Unlock Insights</h4>
-          <p>Pay $0.99 to reveal who voted for your poll or comment.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <main>
+        <div class="container">
+            <section class="hero-section">
+                <h2>Your Voice, Anonymously.</h2>
+                <p>Create and participate in polls without revealing your identity.</p>
+                <button id="create-poll-btn" class="cta-button">Create Your First Poll</button>
+            </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 PollAnon. All rights reserved.</p>
-    </div>
-  </footer>
+            <section class="polls-list-section">
+                <h3>Recent Polls (Placeholder)</h3>
+                <div id="polls-list">
+                    <!-- Poll cards will go here, potentially loaded from Firebase later -->
+                    <p>No polls yet? Be the first to create one!</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 PollAnon. All rights reserved.</p>
+            <!-- You could add privacy policy or terms links here -->
+        </div>
+    </footer>
+
+    <!-- Link to our JavaScript file -->
+    <script src="scripts.js"></script>
+
 </body>
-        </html>
+</html>
